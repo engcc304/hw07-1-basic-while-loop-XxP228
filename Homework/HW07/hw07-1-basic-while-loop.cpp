@@ -30,3 +30,53 @@
         [7] Hello World
 
 */
+// #include <stdio.h>
+
+// int main() {
+//     int numLines;
+//     int i;
+
+//     printf("Enter the number of lines: ");
+//     scanf("%d", &numLines);
+
+//     if (numLines % 2 != 1) {
+//         while ( i = 1, i <= numLines) {
+//             printf("(%d) Hello World\n", i);
+//         }
+//     } else if (numLines % 3 != 0) {
+//         while ( i = 1, i <= numLines) {
+//             printf("[%d] Hello World\n", i);
+//         }
+//     }
+
+//     return 0;
+// }
+#include <stdio.h>
+
+int main()
+{
+    int numLines;
+    int i = 0;
+
+    printf("Enter the number of lines: ");
+    scanf("%d", &numLines);
+
+    if (numLines % 2 != 1)
+    {
+        while (i < numLines) {
+            i++;
+            printf("(%d) Hello World\n", i);
+            
+        }
+            
+    }
+    else if (numLines % 3 != 0)
+    {
+        while (i < numLines ) {
+            i++;
+            printf("[%d] Hello World\n", i);
+            
+        }
+    }
+    return 0;
+}
